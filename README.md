@@ -11,6 +11,7 @@ This collection currently contains:
 | Skill | What it does |
 |-------|--------------|
 | [`rea-reversing`](skills/rea-reversing/) | Guides the agent through using the installed `rea` CLI to reverse engineer binaries, APK/IPA apps, Electron/JavaScript apps, .NET assemblies, firmware, WASM, model files, and HAR/pcap captures |
+| [`roblox-game`](skills/roblox-game/) | Expert Roblox game development companion — Luau patterns, genre scaffolds (Simulator, Tycoon, Obby, RPG, Horror, Battle Royale), DataStore persistence, monetization, security hardening, performance audits, and Roblox Studio MCP integration |
 
 ## Installing a skill
 
@@ -62,7 +63,7 @@ mv <this-repo>/skills/rea-reversing ~/.agents/skills/
 - The skill **folder name must match** the `name` in its `SKILL.md` frontmatter (e.g. `rea-reversing/SKILL.md` must declare `name: rea-reversing`).
 - If the same skill name exists in both `~/.agents/skills` and `<project>/.ilmu/skills`, the project copy wins — use this to customize a shared skill per project.
 - After installing, start a fresh ILMUcode session; the skill's description is picked up automatically, or invoke it explicitly with `/rea-reversing`.
-- Skills that rely on external tools (like `rea-reversing`, which needs the [`rea` CLI](https://github.com/morluto/rea)) additionally require that tool to be installed on your system — run `rea doctor` to check.
+- Skills that rely on external tools (like `rea-reversing`, which needs the [`rea` CLI](https://github.com/morluto/rea)) additionally require that tool to be installed on your system — run `rea doctor` to check. `roblox-game` works offline out of the box, and gains live Studio execution when a Roblox Studio MCP server is configured.
 
 ## Contributing
 
